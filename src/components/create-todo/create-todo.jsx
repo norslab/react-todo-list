@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 export const CreateTodo = ({ addData, defaultValues }) => {
   const [text, setText] = React.useState(defaultValues ? defaultValues : { name: "", age: "", email: "" })
@@ -15,17 +16,19 @@ export const CreateTodo = ({ addData, defaultValues }) => {
   };
   return (
     <div>
-      <form onSubmit={submit}>
+      <form  onSubmit={submit}>
         <div>
-          <input name="name" value={text.name} onChange={changeState} type="text" placeholder="name" />
+          <input className='todo-input' name="name" value={text.name} onChange={changeState} type="text" placeholder="to do list..." />
+
+          <button className='btn-primary' type="submit">{defaultValues ? "Edit" : "Add"}</button>
         </div>
-        <div>
+        {/* <div>
           <input name="age" value={text.age} onChange={changeState} type="text" placeholder="age" />
         </div>
         <div>
           <input name="email" value={text.email} onChange={changeState} type="text" placeholder="email" />
-        </div>
-        <button type="submit">{defaultValues ? "Edit" : "Submit"}</button>
+        </div> */}
+        
       </form>
     </div>
   )

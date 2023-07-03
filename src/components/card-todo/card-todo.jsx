@@ -19,14 +19,18 @@ export const CardTodo = ({ name, age, email, id, setData }) => {
 
   return (
     <div style={{ border: "2px solid #e5e5" }}>
-      {hide ? <CreateTodo defaultValues={{ name, age, email }} addData={editData} /> : (
-        <>
-          <h2>{name}</h2>
-          <h2>{age}</h2>
-          <p>{email}</p>
-          <button onClick={deleteCard}>remove</button>
-          <button onClick={() => setHide(!hide)}>Edit</button>
-        </>
+      {hide ? <CreateTodo defaultValues={{ name, }} addData={editData} /> : (
+        <div className='d-flex align-items-center py-2 px-2 border-bottom item '>
+          <input className=' mt-0 me-2 checkbox' type="checkbox" />
+          <p className='m-0 '>{name}</p>
+          {/* <h2>{age}</h2>
+          <p>{email}</p> */}
+          <div className='div ms-auto'>
+             <button className='btn btn-success edit' onClick={() => setHide(!hide)}>Edit</button>
+              <button className='btn btn-danger ms-1 delete' onClick={deleteCard}>remove</button>
+          </div>
+          
+        </div>
       )}
     </div>
   )

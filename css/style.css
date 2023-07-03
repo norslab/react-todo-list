@@ -1,0 +1,35 @@
+#root{
+  margin-top: 80px;
+}
+
+.container-todo {
+  max-width: 700px !important;
+}
+
+.todo-input{
+  width: 90%;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 0.6rem;
+}
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+/* .item{
+  margin-bottom: 20px;
+} */
+
+.checkbox{
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox:checked ~ p{
+  text-decoration: line-through; 
+  color: #6c757d;
+} 
+
+.btn-primary{
+  width: 64px;
+}

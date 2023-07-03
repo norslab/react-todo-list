@@ -4,10 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>To Do (App)</title>
   </head>
   <body>
-    <div id="root"></div>
+    <header class="bg-light py-3 border-bottom">
+      <div class="container d-flex justify-content-between align-items-center"><a class="text-decoration-none h4 mb-0"
+              href="/">Todo app</a>
+          <a class="text-decoration-none h5 mb-0" href="https://github.com/norslab/react-todo-list"
+              target="_blank">Repo</a>
+      </div>
+  </header>
+
+    <div class="container container-todo" id="root"></div>
+
+    <footer class="bg-light py-3 border-top fixed-bottom">
+      <div class="container">
+          <p class="text-center text-muted m-0">© 2023 Todos app - made by <a target="_blank" href="https://www.linkedin.com/in/mirjalolrahmonqulov/"
+                  class="text-decoration-none">Mr Mirjalol</a></p>
+      </div>
+  </footer>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
