@@ -59,4 +59,10 @@ button:not(:disabled) {
     margin-left: 0px;
   }
 }
+@media only screen and (max-width: 366px){
+  .todo-input{
+    width: 83%;
+    
+  }
+}
   
