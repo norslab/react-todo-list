@@ -17,7 +17,7 @@ export const CreateTodo = ({ addData, defaultValues }) => {
   return (
     <div>
       <form  onSubmit={submit}>
-        <div>
+        <div className='contr container-todo'>
           <input className='todo-input' name="name" value={text.name} onChange={changeState} type="text" placeholder="to do list..." />
 
           <button className='btn-primary' type="submit">{defaultValues ? "Edit" : "Add"}</button>

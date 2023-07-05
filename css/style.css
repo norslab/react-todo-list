@@ -33,3 +33,30 @@ button:not(:disabled) {
 .btn-primary{
   width: 64px;
 }
+
+@media only screen and (max-width: 686px){
+  .todo-input{
+    width: 85%;
+    
+  }
+  .btn-primary{
+    width: 52px;
+  }
+} 
+
+@media only screen and (max-width: 666px){
+  .contr{
+    margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 550px){
+  .contr{
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 490px){
+  .contr{
+    margin-left: 0px;
+  }
+}
+  
